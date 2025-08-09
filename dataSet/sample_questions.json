@@ -1,0 +1,140 @@
+[
+  {
+    "id": 1,
+    "category": "DSA",
+    "difficulty": "medium",
+    "question": "Given a sorted array of integers, write a function to find the first occurrence of a target value.",
+    "ideal_answer": "Use binary search; when you find target, continue searching left half to find first occurrence. O(log n) time. Edge cases: empty array, target not present."
+  },
+  {
+    "id": 2,
+    "category": "DSA",
+    "difficulty": "easy",
+    "question": "Explain the difference between an array and a linked list.",
+    "ideal_answer": "Array: contiguous memory, O(1) access by index, O(n) insert/delete in middle. Linked list: nodes with pointers, O(1) insert/delete given node, O(n) access by index."
+  },
+  {
+    "id": 3,
+    "category": "Algorithms",
+    "difficulty": "medium",
+    "question": "Describe dynamic programming and give an example problem.",
+    "ideal_answer": "DP is memoization/tabulation to reuse overlapping subproblems. Example: Fibonacci with memoization or coin change. Steps: define subproblem, recurrence, base cases."
+  },
+  {
+    "id": 4,
+    "category": "System Design",
+    "difficulty": "hard",
+    "question": "Design a URL shortening service like bit.ly. Describe components, data model, and scaling considerations.",
+    "ideal_answer": "Key components: API, encoding service, datastore (fast key-value), redirect service, analytics. Discuss generation of short keys (base62), collision handling, DB choice (NoSQL), caching layer (Redis), partitioning, availability, and rate-limiting."
+  },
+  {
+    "id": 5,
+    "category": "OOP",
+    "difficulty": "easy",
+    "question": "What are the four pillars of object-oriented programming?",
+    "ideal_answer": "Encapsulation, Abstraction, Inheritance, Polymorphism. Provide short examples for each."
+  },
+  {
+    "id": 6,
+    "category": "Databases",
+    "difficulty": "medium",
+    "question": "Explain database indexing and trade-offs.",
+    "ideal_answer": "Indexes speed up reads (log or O(1) lookups) but cost extra space and slower writes. Types: B-Tree, Hash, Inverted. Choose based on query patterns."
+  },
+  {
+    "id": 7,
+    "category": "Behavioral",
+    "difficulty": "medium",
+    "question": "Tell me about a time you faced a conflict on a team and how you resolved it.",
+    "ideal_answer": "Use STAR: Situation, Task, Action, Result. Explain context, your actions to mediate, and a positive outcome."
+  },
+  {
+    "id": 8,
+    "category": "Coding",
+    "difficulty": "medium",
+    "question": "Implement an algorithm to detect a cycle in a directed graph.",
+    "ideal_answer": "Use DFS with recursion stack or Kahn's algorithm for topo sort; if back edge seen in DFS, cycle exists. Time O(V+E)."
+  },
+  {
+    "id": 9,
+    "category": "Algorithms",
+    "difficulty": "medium",
+    "question": "Explain two-pointer technique with an example.",
+    "ideal_answer": "Two pointers (left/right) used in sorted arrays for sum pairs, removing duplicates, etc. Example: find pair with target sum in sorted array in O(n)."
+  },
+  {
+    "id": 10,
+    "category": "System Design",
+    "difficulty": "medium",
+    "question": "How would you design a notification system that supports email and push?",
+    "ideal_answer": "Components: ingestion API, queue, worker pool, adapter layer for channels, retry mechanism, monitoring, and backpressure. Discuss scaling and idempotency."
+  },
+  {
+    "id": 11,
+    "category": "DSA",
+    "difficulty": "medium",
+    "question": "How to reverse a linked list?",
+    "ideal_answer": "Iterative with three pointers (prev, curr, next) or recursive. O(n) time, O(1) space for iterative. Handle empty and single-node lists."
+  },
+  {
+    "id": 12,
+    "category": "Coding",
+    "difficulty": "hard",
+    "question": "Given a matrix of 0s and 1s, find the largest square containing only 1s.",
+    "ideal_answer": "Use DP: dp[i][j]=min(dp[i-1][j],dp[i][j-1],dp[i-1][j-1])+1 when matrix[i][j]==1. Track max size. O(mn) time."
+  },
+  {
+    "id": 13,
+    "category": "Behavioral",
+    "difficulty": "easy",
+    "question": "Why are you interested in this role/company?",
+    "ideal_answer": "Speak to alignment: company mission, product, role fit, skills growth. Be specific and show research."
+  },
+  {
+    "id": 14,
+    "category": "Databases",
+    "difficulty": "medium",
+    "question": "Explain ACID properties.",
+    "ideal_answer": "Atomicity, Consistency, Isolation, Durability. Provide brief examples and when you might relax them (BASE)."
+  },
+  {
+    "id": 15,
+    "category": "Algorithms",
+    "difficulty": "hard",
+    "question": "Explain Dijkstra's algorithm and its complexity.",
+    "ideal_answer": "Dijkstra finds shortest path from source for non-negative weights. Use min-priority queue; time O((V+E) log V). Explain path reconstruction."
+  },
+  {
+    "id": 16,
+    "category": "Coding",
+    "difficulty": "medium",
+    "question": "How do you detect if two strings are anagrams?",
+    "ideal_answer": "Sort both strings and compare (O(n log n)) or count frequency (O(n) time, O(1) or O(k) space for charset). Handle unicode carefully."
+  },
+  {
+    "id": 17,
+    "category": "OOP",
+    "difficulty": "medium",
+    "question": "Explain SOLID principles briefly.",
+    "ideal_answer": "S: Single Responsibility, O: Open-Closed, L: Liskov Substitution, I: Interface Segregation, D: Dependency Inversion. Give one-line example for each."
+  },
+  {
+    "id": 18,
+    "category": "Behavioral",
+    "difficulty": "medium",
+    "question": "Describe a project where you demonstrated leadership.",
+    "ideal_answer": "STAR: describe project, your leadership actions (mentoring, planning, removing blockers), measurable results."
+  },
+  {
+    "id": 19,
+    "category": "DSA",
+    "difficulty": "hard",
+    "question": "Find the median of two sorted arrays of different sizes.",
+    "ideal_answer": "Use binary search on smaller array to partition arrays correctly. Achieve O(log(min(m,n))). Explain edge cases and indexing."
+  },
+  {
+    "id": 20,
+    "category": "System Design",
+    "difficulty": "hard",
+    "question": "Design a chat system that supports online presence and message ordering.",
+    "ideal_answer": "Discuss real-time transport (WebSocket), message broker, ordering with sequence numbers or logical clocks, presence service, persistent storage, r
